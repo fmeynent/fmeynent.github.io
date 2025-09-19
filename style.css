@@ -2,3 +2,128 @@ html {
   background-color: white;
   font-size: 20px;
 }
+
+h1 {
+  display: flex;
+  width: 100%;
+  font-size: 35px;
+  padding-bottom:2px;
+  border-bottom: 2px dashed grey; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  display: flex;
+  width: 100%;
+  font-size: 25px;
+  padding-bottom:2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  display: flex;
+  width: 100%;
+  font-size: 22px;
+  padding-bottom:2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.tabs { 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.tabs .tab-registers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: RGB(187, 246, 255);
+  border-bottom: 2px dashed grey; 
+  position: relative;
+  padding : 0 0 15px 0; 
+  background-clip: content-box; 
+  margin-top: 0; 
+}
+
+.tabs button {
+  padding: 0.5em;
+  background-color: RGB(187, 246, 255);
+  border: none;
+  font: inherit;
+}
+
+.tabs .tab-registers button:hover {
+  cursor: pointer;
+}
+
+.tabs .tab-bodies {
+  padding: 0.5em;
+  background-color: white;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.tabs button.active-tab {
+  background-color: rgb(255, 211, 170);
+}
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px; 
+  color: black;
+}
+
+li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px; 
+  color: black;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  gap: 5%; 
+  padding: 10px;
+  box-sizing: border-box; 
+  background-color: white;
+}
+
+#size_bloc{
+  width: 30%;
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+#size_bloc img {
+  width: 100%;    
+  height: auto;   
+  display: block; 
+}
+
+#main_bloc{
+  width: 70%;
+  padding: 40px 150px 0 0;
+  box-sizing: border-box;
+}
+
+.main_text p{
+  font-size: 22px;
+}
+
+#CV {
+  padding-top: 75px;
+}
+
+a[href^="mailto"]::before {
+  content: "📧 ";
+}
+
+i.fab {
+  font-size: 24px;
+  margin-right: 5px;
+}

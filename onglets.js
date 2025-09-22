@@ -1,6 +1,6 @@
 Array.from(document.querySelectorAll('.tabs')).forEach((tab_container, TabID) => {
     const registers = tab_container.querySelector('.tab-registers');
-    const bodies = tab_container.querySelector('.tab-bodies');
+    const bodies = tab_container.querySelector('.tab-content');
   
     Array.from(registers.children).forEach((el, i) => {
       el.setAttribute('aria-controls', `${TabID}_${i}`)

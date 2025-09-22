@@ -1,129 +1,78 @@
-html {
-  background-color: white;
-  font-size: 20px;
-}
-
-h1 {
+.tabs{
   display: flex;
+  flex-direction: column;
   width: 100%;
-  font-size: 35px;
-  padding-bottom:2px;
-  border-bottom: 2px dashed grey; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
 }
 
-h2 {
-  display: flex;
-  width: 100%;
-  font-size: 25px;
-  padding-bottom:2px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.tab-content {
+  margin-top: 1rem;
 }
 
-h3 {
-  display: flex;
-  width: 100%;
-  font-size: 22px;
-  padding-bottom:2px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.tab-registers {
+  display: flex; /* aligne les boutons en ligne */
+  gap: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
 
-
-.tabs { 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-}
-
-.tabs .tab-registers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: RGB(187, 246, 255);
-  border-bottom: 2px dashed grey; 
-  position: relative;
-  padding : 0 0 15px 0; 
-  background-clip: content-box; 
-  margin-top: 0; 
-}
-
-.tabs button {
-  padding: 0.5em;
-  background-color: RGB(187, 246, 255);
+.tab-registers button {
+  background: none;
   border: none;
-  font: inherit;
-}
-
-.tabs .tab-registers button:hover {
+  padding: 10px 15px;
   cursor: pointer;
 }
 
-.tabs .tab-bodies {
-  padding: 0.5em;
-  background-color: white;
-  flex-grow: 1;
-  overflow-y: auto;
-}
-
-.tabs button.active-tab {
-  background-color: rgb(255, 211, 170);
-}
-
-p{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px; 
-  color: black;
-}
-
-li{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px; 
-  color: black;
-}
-
-
-.container {
-  display: flex;
-  width: 100%;
-  gap: 5%; 
-  padding: 10px;
-  box-sizing: border-box; 
+button.active-tab{
+  color:black;
   background-color: white;
 }
 
-#size_bloc{
-  width: 30%;
-  padding: 10px; 
-  box-sizing: border-box;
+.column.main-block p.main_text {
+  font-size: 22px !important;
 }
 
-#size_bloc img {
-  width: 100%;    
-  height: auto;   
-  display: block; 
+.main_text a {
+  display: inline;  
+  color: #3273dc;   
+  text-decoration: underline; 
 }
 
-#main_bloc{
-  width: 70%;
-  padding: 40px 150px 0 0;
-  box-sizing: border-box;
+.contact-block p {
+  text-align: left;  
 }
 
-.main_text p{
-  font-size: 22px;
+.contact-block p a {
+  display: block;     
+  text-align: left;  
+  margin-bottom: 0.3em; 
+  color: #F7F2F2;     
+  text-decoration: none; 
 }
 
-#CV {
-  padding-top: 75px;
+.contact-block p a:hover {
+  color: #3273dc;
 }
 
-a[href^="mailto"]::before {
-  content: "📧 ";
+.main-block {
+  max-width: 90%;       
+  overflow-wrap: break-word; 
+  word-wrap: break-word;     
+  white-space: normal;
+  margin-top: 2em;
+  margin-right: 4em;
+
 }
 
-i.fab {
-  font-size: 24px;
-  margin-right: 5px;
+.main-block ul.vertical-list {
+  list-style: disc;     
+  padding-left: 1.5rem;
+  display: block;       
 }
+.main-block ul.vertical-list li {
+  display: list-item;  
+  margin-bottom: 0.5rem; 
+}
+
+.cv-title {
+  margin-top: 6rem; 
+}        

@@ -76,3 +76,10 @@ button.active-tab{
 .cv-title {
   margin-top: 6rem; 
 }        
+
+#img_art1 {
+  max-height: 300px; 
+  width: 100%;   
+  height: auto;     
+  object-fit: contain; 
+}

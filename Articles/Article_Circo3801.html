@@ -18,9 +18,17 @@
     <p class="classic_p"> Aujourd'hui, cette circonscription comprend de nombreuses communes avec des ménages assez aisés : Corenc, Biviers, Meylan... qui ont plutôt tendance à voter à droite. À l'inverse, la partie nord-est de Grenoble, comprise dans la circonscription, vote davantage à gauche. Cette partie de Grenoble comprend notamment les quartiers populaires de l'Abbaye et Teisseire.</p>
     <h2 class="title is-3"> Que s'est-il passé aux élections de l'été 2024 ?</h2>
     <p class="classic_p">Les élections de 2024 comportaient 5 candidats des tendances suivantes : Lutte Ouvrière, NFP-LFI, Renaissance (majorité présidentielle), LR et LR-RN. Du fait d'un taux de participation élevé (75%) dans la circonscription, une triangulaire se profile au second tour :</p>
-    <ul>
+    <ul class="ml-5 custom-list">
         <li>Hugo Prévost (NFP-LFI) : 40,19% des suffrages exprimés</li>
         <li>Olivier Véran (Renaissance) : 33,62% des suffrages exprimés</li>
         <li>Alexandre Lacroix (LR-RN) : 18,64% des suffrages exprimés </li>
     </ul>
+    <p class="classic_p">Le <a href="images/votes_BV_LEGIT2.html" target="_blank" rel="noopener noreferrer">graphique interactif <em>(Cliquez pour voir) </em></a>représente les scores des différents bureaux de vote au second tour des élections en juillet 2024 : Grenoble a plutôt voté NFP tandis que les autres communes ont préféré Olivier Véran, député sortant Renaissance (majorité présidentielle). </p>
+    <p class="classic_p">Hugo Prévost gagne les élections avec 42,35% des suffrages exprimés, dépassant Olivier Véran de seulement deux points. </p>
+    <p class="classic_p"> Les diverses forces de gauche ont-elles voté pour NFP sachant que le candidat était à LFI ? En effet, la liste Place Publique-PS conduite par Raphaël Glucksmann a obtenu des scores assez élevés dans la circonscription : ont-ils préféré Prévost ou Véran ?</p>
+    <p class="classic_p">J'ai alors estimé une matrice de report via la méthode IPF (Iterative Proportional Fitting) : cette méthode permet d'obtenir une matrice de report de voix. Cette méthode a le défaut de mal gérer les partis ayant fait des petits scores et de déterminer une matrice de report qui permet une bonne prédiction, mais ne traduit pas nécessairement le processus causal. Toutefois, cette approche est satisfaisante pour prédire et comprendre ce qui se joue dans les partis les plus importants. Ici, nous observons clairement que les électeurs PS-PP ont préféré Véran au premier tour, tandis que les autres forces du NFP ont voté pour Prévost. </p>
+    <figure>
+        <img src="images/mat1.jpg" class="img_art" alt="Matrice de reports entre les européennes et le premier tour des législatives de 2024">
+    </figure>
+    <p class="classic_p">Par ailleurs, Olivier Véran est une figure médiatique et locale, le fait d'être élu dépend alors aussi du rapport à sa personne et non pas seulement à son étiquette. Ainsi, il peut être repoussoir comme fédérateur en tant que personne. Il est difficile de le savoir : 1% de voix en plus pour la liste Renaissance aux européennes (supposée traduire un vote lié à l'étiquette, car la figure de Valérie Hayer demeure peu connue) est corrélé à 1,47% de voix en plus pour Olivier Véran au premier tour. Il est alors possible que Véran attire des électeurs par sa personne ou que le plus faible nombre de candidats ait conduit à cette augmentation par le simple mécanisme de report (notamment les reports des électeurs PS-PP). </p>
   </body>

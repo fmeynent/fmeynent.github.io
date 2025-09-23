@@ -6,3 +6,16 @@
     margin-top: 0.5em;
     margin-right: 4em;
 }
+
+.img_art {
+    max-height: 1000px; 
+    max-width: 1000px;  
+    width: 100%;        
+    height: auto;       
+    display: block;     
+    margin: 0 auto;     
+}
+
+.ml-5.custom-list {
+    list-style-type: disc !important;
+}

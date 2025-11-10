@@ -16,6 +16,15 @@
     margin: 0 auto;     
 }
 
+.img_art_little {
+    max-height: 600px; 
+    max-width: 600px;  
+    width: 100%;        
+    height: auto;       
+    display: block;     
+    margin: 0 auto;     
+}
+
 .ml-5.custom-list {
     list-style-type: disc !important;
 }

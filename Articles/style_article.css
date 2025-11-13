@@ -17,8 +17,8 @@
 }
 
 .img_art_little {
-    max-height: 600px; 
-    max-width: 600px;  
+    max-height: 400px; 
+    max-width: 400px;  
     width: 100%;        
     height: auto;       
     display: block;     
@@ -27,4 +27,8 @@
 
 .ml-5.custom-list {
     list-style-type: disc !important;
+}
+
+figure, figcaption {
+  text-align: center;
 }

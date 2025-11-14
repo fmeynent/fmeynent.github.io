@@ -1,0 +1,65 @@
+<!doctype html> 
+<html lang="fr"> 
+  <head> <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style_article.css">
+    <title> N'utilisez pas de service de VPN ! (Traduction)</title> 
+  </head>
+  <body> 
+   <a href="https://fmeynent.github.io/">Retour à l'accueil / Back to Welcome Page</a>
+   <div class="content">
+    <h1 class="title is-1"> N'utilisez pas de service de VPN ! (Traduction)</h1> 
+    <p class="classic_p"> Cet article est une traduction d'un article en anglais écrit par Sven Slootweg (version originale <a href="https://web.archive.org/web/20230710155258/https://gist.github.com/joepie91/5a9909939e6ce7d09e29" target="_blank"> ici </a>).</p>
+    <p class="classic_p"> Non, sérieusement, ne le faites pas. Vous êtes probablement en train de lire cet article parce que vous vous demandez quel service de VPN (ou RPV (réseau privé virtuel) en français) utiliser, voici la réponse.</p>
+    <p class="classic_p"><em>Note : le contenu de cet article ne s'applique pas à l'usage de VPN conformément à sa finalité prévue, c'est-à-dire en tant que réseau virtuel privé (ou interne). Il s'applique dans un cas d'utilisation de cet outil en tant que "proxy glorifié", et c'est ce que font les "fournisseurs de VPN" tiers.</em></p>   
+
+    <h2 class="title is-3">Et pourquoi pas ?</h2>
+    <p class="classic_p">Parce qu'un VPN, dans ce cas, est uniquement un proxy glorifié. Le fournisseur de VPN peut voir tout votre trafic et en faire ce qu'il veut, y compris l'enregistrer. </p>
+        
+    <h2 class="title is-3">Mais mon fournisseur n'enregistre pas !</h2>
+    <p class="classic_p">Il n'y a aucun moyen pour vous de le vérifier, et c'est évidemment ce que prétendrait un fournisseur de VPN malveillant. Pour résumer : la seule hypothèse à même de garantir votre sécurité est de considérer que tous les fournisseurs de VPN enregistrent. </p>
+    <p class="classic_p">Gardez en tête que c'est dans l'intérêt du fournisseur VPN d'enregistrer ce que font ses utilisateurs : cela leur permet de faire reposer la faute sur l'utilisateur s'il rencontre des ennuis judiciaires. Les 5 euros mensuels que vous payez pour le service de VPN ne paient même pas le <em>café</em> de leur avocat, donc attendez-vous à ce qu'il vous dénonce aux autorités. </p>
+        
+    <h2 class="title is-3">Mais le business d'un fournisseur s'écroulerait s'il faisait ça !</h2>
+    <p class="classic_p">J'y croirai quand HideMyAss aura fait faillite. Il y a quelques années, ils ont abandonné leurs utilisateurs et <a href="http://www.theregister.co.uk/2011/09/26/hidemyass_lulzsec_controversy/" target="_blank">cela a été largement médiatisé</a>. La réalité est que la majorité de leurs clients s'en moquent ou n'en sont même pas conscients. </p>
+        
+    <h2 class="title is-3">Mais j'ai payé anonymement, en utilisant du Bitcoin/PaysafeCard/Cash/drogue !</h2>
+    <p class="classic_p">Peu importe. Vous continuez de vous connecter à leur service depuis votre propre adresse IP, et ils peuvent l'enregistrer.</p>
+        
+    <h2 class="title is-3"> Mais je veux plus de sécurité ! </h2>
+    <p class="classic_p">Les VPNs ne fournissent pas de la sécurité. Ce sont juste des proxys glorifiés. </p>
+        
+    <h2 class="title is-3">Mais je veux davantage de protection de ma vie privée !</h2>
+    <p class="classic_p">Les VPNs ne protègent pas votre vie privée, à quelques exceptions près (détaillées ci-dessous). Il s'agit simplement de proxys. Si quelqu'un souhaite intercepter votre connexion, il pourra toujours le faire. Il devra simplement le faire à un autre moment (lorsque votre trafic quitte le serveur VPN). </p>
+        
+    <h2 class="title is-3">Mais je veux plus de chiffrement !</h2>
+    <p class="classic_p"> Utilisez SSL/TLS et HTTPS (pour les services centralisés), ou du chiffrement de bout en bout (pour les applications de communication ou P2P). Les VPNs ne peuvent pas chiffrer votre trafic comme par magie, c'est techniquement impossible. Si le point d'arrivée attend du texte brut, vous ne pourrez <em>rien</em> faire par rapport à ça.  </p>
+    <p class="classic_p"> Quand vous utilisez un VPN, la <em>seule</em> partie chiffrée de la connexion vient de vous à destination du fournisseur VPN. A partir du fournisseur VPN, c'est comme si vous n'aviez pas de VPN. Et souvenez-vous : <strong>le fournisseur VPN peut voir et modifier tout votre trafic.</strong></p>
+        
+    <h2 class="title is-3">Mais je veux tromper les traqueurs en partageant une adresse IP !</h2>
+    <p class="classic_p">Votre adresse IP est globalement une métrique peu pertinente dans les systèmes de tracking modernes. Les professionnel-le-s du marketing ont compris ce genre de tactiques, et en combinant l'adoption croissante de <a href="https://fr.wikipedia.org/wiki/Carrier-grade_NAT" target="_blank">CGNAT</a> à un nombre toujours en hausse d'appareils par foyers, ce n'est tout simplement plus une donnée fiable.</p>
+    <p class="classic_p">Les spécialistes du marketing utiliseront presque toujours d'autres types de métriques pour vous identifier et vous distinguer. Cela peut être un agent utilisateur ou un <a href="https://panopticlick.eff.org/" target="_blank">profil d'empreinte numérique</a>. Un VPN ne peut pas vous protéger de cela.</p>
+        
+    <h2 class="title is-3">Donc, quand devrais-je utiliser un VPN ?</h2>
+    <p class="classic_p">Il y a grosso modo deux types de situation dans lesquelles vous pourriez vouloir utiliser un VPN :</p>
+    <ol class="ml-5 custom-list">
+        <li>Vous êtes dans un réseau connu pour être hostile (par exemple, le Wi-Fi public d'un aéroport, ou un fournisseur d'accès internet connu pour utiliser l'HDM), et vous voulez contourner cela. </li>
+        <li> Vous voulez masquer votre adresse IP auprès d'un ensemble très précis d'adversaires non liés à des autorités gouvernementales – par exemple, contourner un bannissement dans un tchat ou éviter de recevoir des lettres d'avertissements liées au piratage. </li>
+    </ol>
+    <p class="classic_p">Dans le second cas, vous voudriez probablement un proxy classique <em>spécifiquement</em> dédié à ce trafic – envoyer tout votre trafic à un fournisseur VPN (comme c'est le cas par défaut avec quasiment tous les clients VPN) lui permettra toujours d'espionner et de manipuler votre trafic.</p>
+    <p class="classic_p">Cependant, en pratique, <strong>n'utilisez juste pas de fournisseur VPN du tout, y compris pour ce type de situations.</strong></p>
+
+        
+    <h2 class="title is-3"> Alors... quoi ? </h2>
+    <p class="classic_p">Si vous avez absolument besoin d'un VPN, et que vous en comprenez les limites, achetez un serveur privé virtuel et configurez le vôtre (avec des outils comme <a href="https://github.com/StreisandEffect/streisand" target="_blank">Streisand</a> ou manuellement - je recommande d'utiliser Wireguard). Je ne vous recommanderai aucun fournisseur en particulier (la diversité est une bonne chose !), mais il y en a beaucoup que vous pouvez trouver pour pas cher sur <a href="https://www.lowendtalk.com/categories/offers" target="_blank"> LowEndTalk</a>.</p>
+        
+    <h2 class="title is-3">Mais comment cela peut-il être meilleur qu'un service VPN ? </h2>
+    <p class="classic_p">Un fournisseur VPN <em>recherche spécifiquement</em> ceux qui cherchent de la confidentialité, et qui peuvent donc avoir un trafic intéressant. Statistiquement parlant, il est plus probable qu'un fournisseur de VPN soit malveillant ou serve de piège qu'un quelconque fournisseur de serveur privé virtuel.</p>
+        
+    <h2 class="title is-3">Mais alors, pourquoi les services de VPN existent ? Il doivent bien servir à quelque chose ? </h2>
+    <p class="classic_p">Parce que c'est de l'argent facile. Vous avez juste à configurer OpenVPN sur quelques serveurs, et à commencer à vendre de la bande passante en vous dégageant une marge. Vous pouvez faire toutes les promesses du monde, parce que personne ne peut les vérifier. Vous n'avez même pas besoin de savoir ce que vous faites, parce qu'encore une fois, personne ne peut vérifier ce que vous dites. C'est du pur charlatanisme. </p>
+    <p class="classic_p">Alors oui, les services de VPN servent un objectif – celui qui profite au fournisseur, pas à vous.</p>
+
+   </div>
+  </body>

@@ -32,3 +32,11 @@
 figure, figcaption {
   text-align: center;
 }
+
+.bib-text li {
+    font-size: 0.85rem;
+}
+
+.civ-content {
+  text-align: justify;
+}
